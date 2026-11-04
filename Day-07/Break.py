@@ -33,5 +33,19 @@ for i in range(3):
     elif password==corpass or maxattempts>=3:
         print("you entered correct password or your max attemps completed")
         break'''
+#Write a Python program that generates and prints the first 20 terms of the Fibonacci sequence.
+# However, if a term is greater than 100,
+# stop generating the sequence using the break statement.
 
+a=0
+b=1
+print(a,end=' ')
+print(b,end=' ')
+for i in range(2,20):
+    c=a+b
+    print(c,end=' ')
+    a=b
+    b=c
+    if c>100:
+        break
 
